@@ -13,10 +13,10 @@ namespace MyPortfolio.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MyPortfolioProjectEntities : DbContext
+    public partial class MyPortfolioProjectEntities1 : DbContext
     {
-        public MyPortfolioProjectEntities()
-            : base("name=MyPortfolioProjectEntities")
+        public MyPortfolioProjectEntities1()
+            : base("name=MyPortfolioProjectEntities1")
         {
         }
     
@@ -30,7 +30,6 @@ namespace MyPortfolio.Models
         public virtual DbSet<TblCategories> TblCategories { get; set; }
         public virtual DbSet<TblContacts> TblContacts { get; set; }
         public virtual DbSet<TblExperiences> TblExperiences { get; set; }
-        public virtual DbSet<TblFeatures> TblFeatures { get; set; }
         public virtual DbSet<TblMessages> TblMessages { get; set; }
         public virtual DbSet<TblProjects> TblProjects { get; set; }
         public virtual DbSet<TblServices> TblServices { get; set; }
@@ -38,5 +37,6 @@ namespace MyPortfolio.Models
         public virtual DbSet<TblSocialMedias> TblSocialMedias { get; set; }
         public virtual DbSet<TblTeams> TblTeams { get; set; }
         public virtual DbSet<TblTestimonials> TblTestimonials { get; set; }
+        public virtual DbSet<TblFeatures> TblFeatures { get; set; }
     }
 }
