@@ -10,7 +10,7 @@ namespace MyPortfolio.Controllers
     [AllowAnonymous]  //Herkes erişebilir demek.Yeri burası olması lazım altta olursa sayfa açılmaz
     public class DefaultController : Controller
     {
-        // GET: Default
+        
         MyPortfolioProjectEntities1 db = new MyPortfolioProjectEntities1();
 
         public ActionResult Index()
@@ -77,6 +77,18 @@ namespace MyPortfolio.Controllers
         { 
             var values=db.TblTestimonials.ToList();
             return PartialView(values); 
+        }
+
+        public PartialViewResult DefaultExperiencePartial()
+        {
+            var values=db.TblExperiences.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultContactPartial()
+        {
+            var values= db.TblContacts.ToList();
+            return PartialView(values);
         }
     }
 }

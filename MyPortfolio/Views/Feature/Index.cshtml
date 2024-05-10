@@ -1,0 +1,31 @@
+﻿@model List<MyPortfolio.Models.TblFeatures>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br /><br />
+<h3>Öne Çıkan Sayfası</h3>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad Soyad</th>
+        <th>Başlık</th>
+        <th>Resim</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FeatureId</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Title</td>
+            <td>@item.ImageUrl</td>
+            <td><a href="/Feature/UpdateFeature/@item.FeatureId" class="btn btn-outline-info">Güncelle</a></td>
+
+        </tr>
+    }
+</table>
+<br />

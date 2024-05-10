@@ -8,7 +8,7 @@
 <br />
 <h3>Hakkımda Sayfası</h3>
 
-<table class="table table-bordered" >
+<table class="table table-bordered">
 
     <tr>
         <th>#</th>
@@ -19,17 +19,17 @@
         <th>Güncelle</th>
     </tr>
 
-    @foreach(var item in Model)
-            {
-                <tr>
-                    <td>@item.AboutId</td>
-                    <td>@item.ImageUrl</td>
-                    <td>@item.Title</td>
-                    <td>@item.Description</td>
-                    <td><a href="/About/DeleteAbout/@item.AboutId" class="btn btn-outline-danger">Sil</a> </td>
-                    <td><a href="/About/UpdateAbout/@item.AboutId" class="btn btn-outline-info">Güncelle</a> </td>
-                </tr>
-            }
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.AboutId</td>
+            <td>@item.ImageUrl</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td><a href="/About/DeleteAbout/@item.AboutId" class="btn btn-outline-danger">Sil</a> </td>
+            <td><a href="/About/UpdateAbout/@item.AboutId" class="btn btn-outline-info">Güncelle</a> </td>
+        </tr>
+    }
 
 </table>
 

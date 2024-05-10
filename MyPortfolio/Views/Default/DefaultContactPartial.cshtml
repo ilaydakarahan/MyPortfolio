@@ -1,0 +1,32 @@
+﻿@model List<MyPortfolio.Models.TblContacts>
+
+@foreach (var item in Model)
+{
+   <div class="footer wow fadeIn" data-wow-delay="0.3s">
+       <div class="container-fluid">
+           <div class="container">
+               <div class="footer-info">
+                   <h2>@item.NameSurname</h2>
+                   <h3>@item.Address</h3>
+                   <div class="footer-menu">
+                       <p>@item.Phone</p>
+                       <p>@item.Email</p>
+                   </div>
+               </div>
+
+               <div class="footer-social">
+                   <a href="https://www.facebook.com/ilayda.pala1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://www.youtube.com/channel/UCFDTxV3JaVKEMdDQ9TZ5NUw" target="_blank"><i class="fab fa-youtube"></i></a>
+                   <a href="https://www.instagram.com/ilaydapkarahan/" target="_blank"><i class="fab fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/ilaydakarahan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="https://github.com/ilaydakarahan" target="_blank"><i class="fa-brands fa-github"></i></a>
+               </div>
+
+           </div>
+           <div class="container copyright">
+               <p>&copy; <a href="/Default/Index">My Portfolio</a>, Tüm Hakları Saklıdır. | Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+           </div>
+       </div>
+   </div>
+
+}
