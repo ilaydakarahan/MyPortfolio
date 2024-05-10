@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace MyPortfolio.Controllers
 {
+    [AllowAnonymous]  //Herkes erişebilir demek.Yeri burası olması lazım altta olursa sayfa açılmaz
     public class DefaultController : Controller
     {
         // GET: Default
@@ -51,6 +52,25 @@ namespace MyPortfolio.Controllers
             return PartialView(values);
         }
 
+        public PartialViewResult DefaultSkillPartial()
+        {
+            var values=db.TblSkills.ToList();
+            return PartialView(values);
+        }
 
+        public PartialViewResult DefaultProjectPartial()
+        {
+            var categories=db.TblCategories.ToList();
+            ViewBag.categories = categories;
+
+            var values=db.TblProjects.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultTeamPartial()
+        {
+            var values=db.TblTeams.ToList();
+            return PartialView(values);
+        }
     }
 }

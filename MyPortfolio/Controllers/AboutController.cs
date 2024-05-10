@@ -1,4 +1,5 @@
 ﻿using MyPortfolio.Models;
+using MyPortfolio.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace MyPortfolio.Controllers
         MyPortfolioProjectEntities1 db=new MyPortfolioProjectEntities1();
         
         public ActionResult Index()
-        {
+        {  
             var values = db.TblAbouts.ToList();
             return View(values);
         }

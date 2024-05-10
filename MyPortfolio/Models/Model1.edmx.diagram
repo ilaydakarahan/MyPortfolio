@@ -19,6 +19,7 @@
         <EntityTypeShape EntityType="MyPortfolioProjectModel.TblTestimonials" Width="1.5" PointX="6.625" PointY="4.5" IsExpanded="true" />
         <AssociationConnector Association="MyPortfolioProjectModel.FK_TblProjects_TblCategories" ManuallyRouted="false" />
         <EntityTypeShape EntityType="MyPortfolioProjectModel.TblFeatures" Width="1.5" PointX="9.375" PointY="3.75" />
+        <EntityTypeShape EntityType="MyPortfolioProjectModel.TblAdmin" Width="1.5" PointX="9.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
