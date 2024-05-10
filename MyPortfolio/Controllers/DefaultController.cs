@@ -72,5 +72,11 @@ namespace MyPortfolio.Controllers
             var values=db.TblTeams.ToList();
             return PartialView(values);
         }
+
+        public PartialViewResult DefaultTestimonialPartial()
+        { 
+            var values=db.TblTestimonials.ToList();
+            return PartialView(values); 
+        }
     }
 }

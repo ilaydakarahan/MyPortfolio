@@ -45,5 +45,43 @@ namespace MyPortfolio.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public ActionResult AddService()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AddService(TblServices services)
+        {
+            db.TblServices.Add(services);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult DeleteService(int id)
+        {
+            var services = db.TblServices.Find(id);
+            db.TblServices.Remove(services);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult UpdateService(int id)
+        {
+            var services=db.TblServices.Find(id);
+            return View(services);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateService(TblServices services)
+        {
+            var value = db.TblServices.Find(services.ServiceId);
+            value.Icon = services.Icon;
+            value.Title = services.Title;
+            value.Description= services.Description;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

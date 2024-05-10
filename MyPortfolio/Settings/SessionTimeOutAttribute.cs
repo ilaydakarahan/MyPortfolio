@@ -19,8 +19,7 @@ namespace MyPortfolio.Settings
 
             if (HttpContext.Current.Session["userName"] == null)
             {
-                filterContext.Result = new RedirectResult("~/Login/Index?ReturnUrl=" 
-                    + currentController + "/" + currentAction);
+                filterContext.Result = new RedirectResult("~/Login/Index?ReturnUrl=" + currentController + "/" + currentAction);
                 return;               
             }
             base.OnActionExecuting(filterContext);
