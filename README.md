@@ -16,12 +16,6 @@ Bu projede ;
 * :house: **Sosyal Medya İşlemleri:** Yönetici sosyal medya hesaplarını ekleyebilir,silebilir,düzenleyebilir.
 * :package:  **Mesaj işlemleri :** Yönetici  gelen kutusu ’nu görüntüleyebilir, mesajları düzenleyebilir,silebilir.
 
-### 2- Kullanıcı Rolü
-
-*  💼  **Hizmet İşlemleri :** Kullanıcı **Housing Estate Management** aracılığı ile duyuruları görüntüleyebilir.
-
-*  :package: **Mesaj İşlemleri :** Kullanıcı **Housing Estate Management** aracılığı ile  gelen Kutusu ’nu görüntüleyebilir, giden kutusunu görüntüleyebilir ve yöneticiye mesaj gönderebilir.
-
 
  ## Admin olarak giriş yapmak için gerekli olan bilgiler: 
 
